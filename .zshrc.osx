@@ -34,6 +34,7 @@ plugins=(git svn python pip osx virtualenvwrapper brew encode64)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export LANG=en_US.utf-8
 export PATH=/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/:~/Racket\ v5.3/:/usr/lib/:/usr/local/share/npm/bin
 export EDITOR=VIM
 export WORKON_HOME=$HOME/.virtualenvs
