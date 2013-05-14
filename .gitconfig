@@ -1,0 +1,12 @@
+[user]
+	name = squarel
+	email = squarelnix@gmail.com
+[core]
+    editor = vim
+[alias]
+    co = checkout
+    st = status
+    br = branch
+    df = diff --patience
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
