@@ -12,6 +12,7 @@ bind-key -n M-t new-window
 bind-key -n S-Right next-window
 bind-key -n S-Left previous-window
 bind-key -n M-[ copy-mode
+bind-key -n M-o select-pane -t :.+
 
 # Reload key
 bind-key -n M-r source-file ~/.tmux.conf
