@@ -1,0 +1,22 @@
+[core]
+    repositoryformatversion = 0
+    filemode = true
+    bare = false
+    logallrefupdates = true
+
+[remote "origin"]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    #url = 
+
+[branch "develop"]
+    remote = origin
+    merge = refs/heads/develop
+
+[branch "foo/bar"]
+    remote = origin
+    merge = refs/heads/foo/bar
+
+[receive]
+    fsckObjects = false
+    denyNonFastForwards = false
+    denyDeletes = false
