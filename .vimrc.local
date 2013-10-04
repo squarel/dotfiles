@@ -1,2 +1,5 @@
+colorscheme aqua
+colorscheme solarized
 set colorcolumn=80
 "set clipboard=unnamed
+"set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
