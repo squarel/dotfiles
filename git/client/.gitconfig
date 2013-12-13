@@ -24,7 +24,6 @@
     ls     = ls-files
     lol    = log --graph --decorate --pretty=format:\"%Cblue %h %C(magenta) %ad %C(cyan) %d %Creset %s %C(green)[%an]\" --date=short
     lal    = log --graph --decorate --pretty=format:\"%Cblue %h %C(magenta) %ad %C(cyan) %d %Creset %s %C(green)[%an]\" --date=short --all
-    up     = log --since yesterday --author leo@bitsighttech.com --pretty=short
     ready  = rebase -i @{u}
     type   = cat-file -t
     dump   = cat-file -p
