@@ -1,3 +1,7 @@
+# TODO:
+# python env, ruby env
+# postgresql
+
 red='\033[0;31m'
 light_green='\e[1;32m'
 NC='\033[0m'
@@ -25,7 +29,7 @@ ubuntu_install() {
     echo "sudo apt-get update"
     sudo apt-get update
     echo "sudo apt-get -y install curl git zsh"
-    sudo apt-get -y install curl git zsh
+    sudo apt-get -y install curl git zsh mercurial
 }
 
 
@@ -43,8 +47,23 @@ ohmyzsh() {
     elif [ "$OS" = "Linux" ]; then
         ln -sf "$HOME/.dotfiles/.zshrc.linux" "$HOME/.zshrc"
     fi
+    ln -sf "$HOME/.dotfiles/custom" "$HOME/.oh-my-zsh/custom"
     ret="$?"
     debug
+}
+
+vim() {
+    # compile from scratch
+    sudo apt-get -y remove vim-common vim-runtime
+    sudo apt-get build-dep vim
+    hash hg > /dev/null && /usr/bin/env hg clone https://vim.googlecode.com/hg/ /tmp/vim || {
+        echo "mercurial not installed"
+        exit
+    }
+    cd /tmp/vim/src
+    ./configure --enable-pythoninterp --enable-rubyinterp
+    make
+    sudo make install
 }
 
 ubuntu_install
