@@ -1,5 +1,14 @@
 colorscheme aqua
 colorscheme solarized
 set colorcolumn=80
-"set clipboard=unnamed
-"set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
+
+set clipboard=unnamed
+
+set guifont=Monaco\ for\ Powerline:h12
+
+let g:syntastic_cpp_compiler_options=" -std=c++11 -Wno-deprecated-declarations"
+
+let g:airline_powerline_fonts=1
+
+nnoremap <Left> = :bp <CR>
+nnoremap <Right> = :bn <CR>

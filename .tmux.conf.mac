@@ -1,4 +1,4 @@
-set-option -g default-command "reattach-to-user-namespace -l zsh"
+#set-option -g default-command "reattach-to-user-namespace -l zsh"
 unbind C-b
 set -g prefix M-v
 
@@ -26,6 +26,7 @@ set -g history-limit 51200
 set-option -g mouse-select-pane on
 set-option -g mouse-select-window on
 set-window-option -g mode-mouse on
+set -g mouse-resize-pane on
 
 # Theme
 
