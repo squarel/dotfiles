@@ -1,5 +1,5 @@
 colorscheme aqua
-colorscheme solarized
+colorscheme Solarized
 set colorcolumn=80
 
 set clipboard=unnamed
@@ -9,6 +9,11 @@ set guifont=Monaco\ for\ Powerline:h12
 let g:syntastic_cpp_compiler_options=" -std=c++11 -Wno-deprecated-declarations"
 
 let g:airline_powerline_fonts=1
+let g:airline_theme='bubblegum'
+let g:Powerline_symbols='fancy'
 
 nnoremap <Left> = :bp <CR>
 nnoremap <Right> = :bn <CR>
+
+set guioptions+=LlRrb
+set guioptions-=LlRrb
