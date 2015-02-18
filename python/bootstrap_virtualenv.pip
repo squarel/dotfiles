@@ -1,0 +1,14 @@
+awscli==1.7.10
+bcdoc==0.12.2
+botocore==0.91.0
+colorama==0.2.5
+docutils==0.12
+gnureadline==6.3.3
+ipython==2.4.1
+jmespath==0.6.1
+pyasn1==0.1.7
+python-dateutil==2.4.0
+requests==2.5.1
+rsa==3.1.2
+six==1.9.0
+SQLAlchemy==0.9.8
