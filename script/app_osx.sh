@@ -17,6 +17,8 @@ vlc
 skype
 emacs
 macvim
+spectacle
+postgres
 )
 
 echo "installing apps..."

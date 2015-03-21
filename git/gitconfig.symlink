@@ -30,7 +30,7 @@
     mergeb = merge --no-ff
 
 [diff]
-    tool = diffuse
+    tool = vimdiff
 
 [color]
     ui = auto
@@ -56,3 +56,5 @@
 
 [help]
     autocorrect = 1
+[push]
+	default = matching

@@ -17,3 +17,48 @@ nnoremap <Right> = :bn <CR>
 
 set guioptions+=LlRrb
 set guioptions-=LlRrb
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
+" pymode
+let g:pymode_lint_unmodified = 0
+""Turn on code checking
+let g:pymode_lint = 1
+
+""Check code on every save (if file has been modified)
+let g:pymode_lint_on_write = 1
+
+""Check code on every save (every)                    *'g:pymode_lint_unmodified'*
+let g:pymode_lint_unmodified = 0
+
+""Check code when editing (on the fly)                        *'g:pymode_lint_on_fly'*
+let g:pymode_lint_on_fly = 0
+
+""Show error message if cursor placed at the error line  *'g:pymode_lint_message'*
+let g:pymode_lint_message = 1
+
+""Default code checkers (you could set several)         *'g:pymode_lint_checkers'*
+let g:pymode_lint_checkers = ['pyflakes', 'pep8']
+
+""Values may be chosen from: `pylint`, `pep8`, `mccabe`, `pep257`, `pyflakes`.
+
+""Skip errors and warnings                                *'g:pymode_lint_ignore'*
+""E.g. "E501,W002", "E2,W" (Skip all Warnings and Errors that starts with E2) and etc
+let g:pymode_lint_ignore = "E501,W"
+
+""Select some error or warnings.                          *'g:pymode_lint_select'*
+""By example you disable all warnings starting from 'W', but want to see warning
+""'W0011' and warning 'W430'
+let g:pymode_lint_select = "E501,W0011,W430"
+
+""Sort errors by relevance                                  *'g:pymode_lint_sort'*
+""If not empty, errors will be sort by defined relevance
+""E.g. let g:pymode_lint_sort = ['E', 'C', 'I']  " Errors first 'E',
+""after them 'C' and ...
+let g:pymode_lint_sort = ['E', 'C', 'I']
+
+""Auto open cwindow (quickfix) if any errors have been found
+let g:pymode_lint_cwindow = 1
+
+

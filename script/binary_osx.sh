@@ -17,6 +17,7 @@ binaries=(
   mercurial
   emacs
   tmux
+  autoenv
 )
 
 brew install ${binaries[@]}

@@ -1,0 +1,38 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/xli/src/nagios/" . "plugins/")
+ ("/Users/xli/src/myflaskapp/" . "myflaskapp/")
+ ("/Users/xli/src/" . "nagios/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/xli/src/nagios/plugins/"
+ "/Users/xli/src/myflaskapp/myflaskapp/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "check_aws_limits.py"
+ "settings.py"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/xli/src/nagios/plugins/" (21771 8746 0 0) "ScopeGuard.pm" "run_pma_prd_sauce_test.sh" "run_pma_dev_sauce_test.sh" "run_pm_prd_sauce_test.sh" "run_pm_dev_sauce_test.sh" "mem_check.sh" "LWPUserAgentDNSHosts.pm" "KyruusWebinject.pm" "kwebinject.pl" "example_run_webinject.sh" "conf/" "check_webinject.sh" "check_tunnel.sh" "check_multiaddr.pl" "check_memory.pl" "check_mem.py" "check_ensemble_status.rb" "check_elastic.py" "check_aws_limits.py" "../" "./")
+
+ ("/Users/xli/src/nagios/" (21762 63811 0 0) "plugins/" "nrpe/" "nagios.cfg" "kyruus/" "cgi.cfg" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/xli/src/" (21770 62127 0 0) "test_sulfur/" "sulfur/" "nagios/" "myflaskapp/" "mesos-workers/" "kyruus-flask/" "kronos/" "eng-salt-states/" "deployment_pipeline/" "chronos/" "angular-phonecat/" ".DS_Store" "../" "./")
+
+ ("/Users/xli/" (21772 10255 0 0) "sulfur-api.yaml" "src/" "sha1.txt" "services-team.pem" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "formatted.json" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "describe.txt" "Avail_prd_pg_dump.sh" "Avail_dev_pg_dump.sh" "Applications/" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-abra-5.0.5" ".zcompdump" ".Xresources" ".Xmodmap" ".virtualenvs/" ".vimviews/" ".vimundo/" ".vimswap/" ".vimrc.local" ".vimrc.bundles.local" ".vimrc.bundles" ".vimrc.before" ".vimrc" ".viminfo" ".vimbackup/" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".spf13-vim-3/" ".rnd" ".psql_history" ".openvpn-connect.json" ".oh-my-zsh/" ".octaverc" ".npm/" ".node-gyp/" ".nagstamon/" ".m2/" ".localrc" ".local/" ".kde/" ".ipython/" ".gitconfig" ".emacs.d/" ".ec2/" ".DS_Store" ".dropbox/" ".dotfiles/" ".cups/" ".cookiecutters/" ".config/" ".CFUserTextEncoding" ".cache/" ".bash_history" ".aws/" ".atom/" ".ApacheDirectoryStudio/" "../" "./")
+
+ ("/Users/xli/src/myflaskapp/myflaskapp/" (21739 40131 0 0) "utils.py" "user/" "templates/" "static/" "settings.py" "public/" "extensions.py" "database.py" "compat.py" "assets.py" "app.py" "__init__.py" "../" "./")
+
+ ("/Users/xli/src/myflaskapp/" (21739 40131 0 0) "tests/" "requirements.txt" "requirements/" "README.rst" "Procfile" "myflaskapp/" "manage.py" "LICENSE" "bower.json" ".travis.yml" ".gitignore" ".bowerrc" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,2 +1,3 @@
 Bundle 'wlangstroth/vim-racket'
 Bundle 'c9s/bufexplorer'
+Bundle 'burnettk/vim-angular'
