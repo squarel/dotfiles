@@ -3,8 +3,8 @@ vim_install() {
     # compile from scratch
     #sudo apt-get -y remove vim-common vim-runtime
     #sudo apt-get -y build-dep vim
-    hash hg > /dev/null && /usr/bin/env hg clone https://vim.googlecode.com/hg/ /tmp/vim || {
-        echo "mercurial not installed"
+    hash git > /dev/null && /usr/bin/env git clone https://github.com/vim/vim.git /tmp/vim || {
+        echo "git not installed"
         exit
     }
     cd /tmp/vim/src
