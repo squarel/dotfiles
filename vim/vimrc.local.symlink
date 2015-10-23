@@ -61,4 +61,6 @@ let g:pymode_lint_sort = ['E', 'C', 'I']
 ""Auto open cwindow (quickfix) if any errors have been found
 let g:pymode_lint_cwindow = 1
 
-
+""airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_alt_sep = '|'

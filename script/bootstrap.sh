@@ -61,7 +61,7 @@ vim() {
         exit
     }
     cd /tmp/vim/src
-    ./configure --enable-pythoninterp --enable-rubyinterp
+    ./configure --enable-pythoninterp --enable-rubyinterp --enable-luainterp --with-features=huge
     make
     sudo make install
 }

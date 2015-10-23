@@ -19,6 +19,7 @@ emacs
 macvim
 spectacle
 postgres
+caffeine
 )
 
 echo "installing apps..."
