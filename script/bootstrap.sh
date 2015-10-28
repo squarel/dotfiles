@@ -66,6 +66,15 @@ vim() {
     sudo make install
 }
 
+vim_yum() {
+     sudo yum install ncurses ncurses-devel
+     git clone https://github.com/vim/vim.git /tmp/vim
+     cd /tmp/vim
+    ./configure --enable-pythoninterp --enable-rubyinterp --enable-luainterp --with-features=huge
+    make
+    sudo make install
+}
+
 ubuntu_install
 clone_repo
 ohmyzsh
