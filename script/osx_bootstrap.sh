@@ -1,7 +1,3 @@
-# TODO:
-# python env, ruby env
-# postgresql
-
 red='\033[0;31m'
 light_green='\e[1;32m'
 NC='\033[0m'
@@ -40,42 +36,22 @@ clone_repo() {
     }
 }
 
-ohmyzsh() {
-    curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-    if [ "$OS" = "Darwin" ]; then
-        ln -sf "$HOME/.dotfiles/.zshrc.osx" "$HOME/.zshrc"
-    elif [ "$OS" = "Linux" ]; then
-        ln -sf "$HOME/.dotfiles/.zshrc.linux" "$HOME/.zshrc"
-    fi
-    ln -sf "$HOME/.dotfiles/custom" "$HOME/.oh-my-zsh/custom"
-    ret="$?"
-    debug
+
+install() {
+    sh ~/.dotfiles/$1/install.sh
 }
 
-vim() {
-    # compile from scratch
-    sudo apt-get -y remove vim-common vim-runtime
-    sudo apt-get build-dep vim
-    hash hg > /dev/null && /usr/bin/env hg clone https://vim.googlecode.com/hg/ /tmp/vim || {
-        echo "mercurial not installed"
-        exit
-    }
-    cd /tmp/vim/src
-    ./configure --enable-pythoninterp --enable-rubyinterp --enable-luainterp --with-features=huge
-    make
-    sudo make install
-}
 
-vim_yum() {
-     sudo yum install ncurses ncurses-devel
-     git clone https://github.com/vim/vim.git /tmp/vim
-     cd /tmp/vim
-    ./configure --enable-pythoninterp --enable-rubyinterp --enable-luainterp --with-features=huge
-    make
-    sudo make install
-}
+~/.dotfiles/script/binary_osx.sh
+~/.dotfiles/script/app_osx.sh
 
-#ubuntu_install
 clone_repo
-ohmyzsh
-vim
+install zsh
+install python
+
+#binary
+#spf13
+#./symlink.sh
+
+
+

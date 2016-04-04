@@ -1,6 +1,6 @@
-
 DOTFILES=$HOME/.dotfiles
 ZSHRC=$HOME/.zshrc
+OS=$(uname)
 
 ohmyzsh() {
     curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh

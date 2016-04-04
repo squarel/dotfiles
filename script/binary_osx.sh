@@ -1,11 +1,11 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 binaries=(
-  graphicsmagick
-  webkit2png
+  #graphicsmagick
+  #webkit2png
   rename
-  zopfli
-  ffmpeg
+  #zopfli
+  #ffmpeg
   #python
   sshfs
   trash
@@ -18,6 +18,7 @@ binaries=(
   emacs
   tmux
   autoenv
+  wget
 )
 
 brew install ${binaries[@]}
